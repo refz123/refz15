@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>REFZ & Teman - Premium Store</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #f0f0f0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 25px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
+
+        .store-name {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 20px rgba(255,215,0,0.3);
+        }
+
+        .tagline {
+            font-size: 1rem;
+            color: #ddd;
+            margin-top: 10px;
+        }
+
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #25D366;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-size: 1.1rem;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(37,211,102,0.4);
+        }
+
+        /* Grid kategori */
+        .category {
+            background: rgba(0,0,0,0.5);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 25px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .category-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            border-left: 5px solid #FFD700;
+            padding-left: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sub-category {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .sub-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #FFD700;
+            margin-bottom: 12px;
+            padding-left: 10px;
+            border-left: 3px solid #FFA500;
+        }
+
+        .price-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        .price-item {
+            background: rgba(255,255,255,0.08);
+            padding: 8px 12px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            transition: 0.2s;
+        }
+
+        .price-item:hover {
+            background: rgba(255,215,0,0.15);
+            transform: translateX(5px);
+        }
+
+        .duration {
+            font-weight: 500;
+            color: #ccc;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #FFD700;
+            font-family: monospace;
+            font-size: 1rem;
+        }
+
+        .note {
+            font-size: 0.8rem;
+            background: rgba(0,0,0,0.4);
+            padding: 6px 12px;
+            border-radius: 10px;
+            margin-top: 10px;
+            color: #ffaa66;
+        }
+
+        hr {
+            border-color: rgba(255,255,255,0.1);
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+
+        @media (max-width: 600px) {
+            .store-name { font-size: 1.8rem; }
+            .category-title { font-size: 1.4rem; }
+            .price-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="store-name">🎬 REFZ & TEMAN</div>
+        <div class="tagline">Premium Store • Harga Rakyat • Garansi Terpercaya</div>
+        <a href="https://wa.me/6285954841942" class="whatsapp-btn" target="_blank">
+            📞 Order via WhatsApp
+        </a>
+    </div>
+
+    <!-- NETFLIX STRONG -->
+    <div class="category">
+        <div class="category-title">🎥 Netflix Premium – STRONG!</div>
+        <div class="sub-category">
+            <div class="sub-title">Sharing 1 User</div>
+            <div class="price-grid">
+                <div class="price-item"><span class="duration">1 Jam</span><span class="price">Rp5.000</span></div>
+                <div class="price-item"><span class="duration">2 Jam</span><span class="price">Rp8.000</span></div>
+                <div class="price-item"><span class="duration">3 Jam</span><span class="price">Rp10.000</span></div>
+                <div class="price-item"><span class="duration">7 Jam</span><span class="price">Rp13.000</span></div>
+                <div class="price-item"><span class="duration">1 Bulan</span><span class="price">Rp30.500</span></div>
+            </div>
+        </div>
+        <div class="sub-category">
+            <div class="sub-title">Sharing 2 User</div>
+            <div class="price-grid">
+                <div class="price-item"><span class="duration">1 Jam</span><span class="price">Rp3.000</span></div>
+                <div class="price-item"><span class="duration">3 Jam</span><span class="price">Rp7.000</span></div>
+                <div class="price-item"><span class="duration">7 Jam</span><span class="price">Rp11.000</span></div>
+                <div class="price-item"><span class="duration">1 Bulan</span><span class="price">Rp30.500</span></div>
+            </div>
+        </div>
+        <div class="sub-category">
+            <div class="sub-title">Semi Private</div>
+            <div class="price-grid">
+                <div class="price-item"><span class="duration">1 Jam</span><span class="price">Rp6.000</span></div>
+                <div class="price-item"><span class="duration">1 Minggu</span><span class="price">Rp16.500</span></div>
+                <div class="price-item"><span class="duration">1 Bulan</span><span class="price">Rp30.500</span></div>
+            </div>
+        </div>
+        <div class="sub-category">
+            <div class="sub-title">Private</div>
+            <div class="price-grid">
+                <div class="price-item"><span class="duration">1 Minggu</span><span class="price">Rp45.500</span></div>
+                <div class="price-item"><span class="duration">1 Bulan</span><span class="price">Rp120.500 - 160.500</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Netflix NO STRONG -->
+    <div class="category">
+        <div class="category-title">📺 Netflix – NO STRONG</div>
+        <div class="sub-category">
+            <div class="sub-title">1 User</div>
+            <div class="price-grid">
+                <div class="price-item"><span class="duration">1 Jam</span><span class="price">Rp2.000</span></div>
+                <div class="price-item"><span class="duration">2 Jam</span><span class="price">Rp5.000</span></div>
+                <div class="price-item"><span class="duration">3 Jam</span><span class="price">Rp7.000</span></div>
+                <div class="price-item"><span class="duration">7 Jam</span><span class="price">Rp10.000</span></div>
+            </div>
+        </div>
+        <div class="sub-category">
+            <div class="sub-title">2 User</div>
+            <div class="price-grid">
+                <div class="price-item"><span class="duration">1 Jam</span><span class="price">Rp2.000</span></div>
+                <div class="price-item"><span class="duration">2 Hari</span><span class="price">Rp4.000</span></div>
+                <div class="price-item"><span class="duration">3 Hari</span><span class="price">Rp6.000</span></div>
+                <div class="price-item"><span class="duration">7 Hari</span><span class="price">Rp8.000</span></div>
+            </div>
+        </div>
+        <div class="sub-category">
+            <div class="sub-title">Semi Private</div>
+            <div class="price-grid">
+                <div class="price-item"><span class="duration">1 Jam</span><span class="price">Rp5.000</span></div>
+                <div class="price-item"><span class="duration">7 Jam</span><span class="price">Rp14.000</span></div>
+                <div class="price-item"><span class="duration">1 Bulan</span><span class="price">Rp24.000</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lainnya disingkat agar tidak terlalu panjang, tapi tetap semua produk -->
+    <div class="category">
+        <div class="category-title">✨ Layanan Premium Lainnya</div>
+        <div class="sub-title">Alight Motion Premium</div>
+        <div class="price-grid"><div class="price-item"><span class="duration">1 Tahun Acc B</span><span class="price">Rp3.000</span></div></div>
+
+        <div class="sub-title">Viu [ANLIM]</div>
+        <div class="price-grid">
+            <div class="price-item"><span class="duration">1 Bulan</span><span class="price">Rp3.500</span></div>
+            <div class="price-item"><span class="duration">2 Bulan</span><span class="price">Rp6.500</span></div>
+            <div class="price-item"><span class="duration">3 Bulan</span><span class="price">Rp9.500</span></div>
+            <div class="price-item"><span class="duration">6 Bulan</span><span class="price">Rp17.500</span></div>
+            <div class="price-item"><span class="duration">1 Tahun</span><span class="price">Rp22.500</span></div>
+            <div class="price-item"><span class="duration">Private 1 Bulan</span><span class="price">Rp26.500</span></div>
+            <div class="price-item"><span class="duration">Private Shar 1B</span><span class="price">Rp24.500</span></div>
+        </div>
+
+        <div class="sub-title">Spotify Premium</div>
+        <div class="price-grid">
+            <div class="price-item"><span class="duration">No Garansi 1B</span><span class="price">Rp14.500</span></div>
+            <div class="price-item"><span class="duration">No Garansi 3B</span><span class="price">Rp23.500</span></div>
+            <div class="price-item"><span class="duration">Full Garansi 3B</span><span class="price">Rp40.500</span></div>
+            <div class="note">📌 Full garansi memakai gmail pribadi seller</div>
+        </div>
+
+        <div class="sub-title">Canva Premium</div>
+        <div class="price-grid">
+            <div class="price-item"><span class="duration">Member 1 Jam</span><span class="price">Rp1.000</span></div>
+            <div class="price-item"><span class="duration">Member 1 Minggu</span><span class="price">Rp1.500</span></div>
+            <div class="price-item"><span class="duration">Member 1 Bulan</span><span class="price">Rp3.500</span></div>
+            <div class="price-item"><span class="duration">Member 1 Tahun</span><span class="price">Rp8.500</span></div>
+            <div class="price-item"><span class="duration">Admin 1 Bulan</span><span class="price">Rp8.500</span></div>
+        </div>
+
+        <div class="sub-title">ChatGPT+</div>
+        <div class="price-grid">
+            <div class="price-item"><span class="duration">Share 1 Jam</span><span class="price">Rp4.500</span></div>
+            <div class="price-item"><span class="duration">Share 3 Jam</span><span class="price">Rp7.000</span></div>
+            <div class="price-item"><span class="duration">Share 7 Jam</span><span class="price">Rp10.000</span></div>
+            <div class="price-item"><span class="duration">Share 1B (8u)</span><span class="price">Rp16.500</span></div>
+            <div class="price-item"><span class="duration">Invite 1 Jam</span><span class="price">Rp6.500</span></div>
+            <div class="price-item"><span class="duration">Invite 3 Jam</span><span class="price">Rp9.500</span></div>
+            <div class="price-item"><span class="duration">Invite 7 Jam</span><span class="price">Rp12.500</span></div>
+            <div class="price-item"><span class="duration">Invite 1 Bulan</span><span class="price">Rp18.500</span></div>
+            <div class="price-item"><span class="duration">Private Indplan 1B</span><span class="price">Rp30.500</span></div>
+            <div class="price-item"><span class="duration">Private Head 1B</span><span class="price">Rp45.500</span></div>
+            <div class="note">✅ Full garansi + akses</div>
+        </div>
+
+        <div class="sub-title">Disney+</div>
+        <div class="price-grid">
+            <div class="price-item"><span class="duration">Share 6u 1 Jam</span><span class="price">Rp3.000</span></div>
+            <div class="price-item"><span class="duration">Share 6u 3 Jam</span><span class="price">Rp9.300</span></div>
+            <div class="price-item"><span class="duration">Share 6u 7 Jam</span><span class="price">Rp17.000</span></div>
+            <div class="price-item"><span class="duration">Share 6u 1B</span><span class="price">Rp24.300</span></div>
+            <div class="price-item"><span class="duration">Share 10u 1 Jam</span><span class="price">Rp2.900</span></div>
+            <div class="price-item"><span class="duration">Share 10u 3 Jam</span><span class="price">Rp8.300</span></div>
+            <div class="price-item"><span class="duration">Share 10u 7 Jam</span><span class="price">Rp13.300</span></div>
+            <div class="price-item"><span class="duration">Share 10u 1B</span><span class="price">Rp18.800</span></div>
+        </div>
+
+        <div class="sub-title">WeTV / Meitu / Wink / Melolo</div>
+        <div class="price-grid">
+            <div class="price-item"><span class="duration">WeTV Shar 6u 1B</span><span class="price">Rp8.300</span></div>
+            <div class="price-item"><span class="duration">WeTV Private 1B</span><span class="price">Rp27.300</span></div>
+            <div class="price-item"><span class="duration">Meitu Shar 1B</span><span class="price">Rp17.800</span></div>
+            <div class="price-item"><span class="duration">Meitu Private 1B</span><span class="price">Rp18.500</span></div>
+            <div class="price-item"><span class="duration">Wink Shar 1B (2u)</span><span class="price">Rp19.200</span></div>
+            <div class="price-item"><span class="duration">Wink Private 1B</span><span class="price">Rp23.200</span></div>
+            <div class="price-item"><span class="duration">Melolo 1B</span><span class="price">Rp7.500</span></div>
+            <div class="price-item"><span class="duration">Melolo 3B</span><span class="price">Rp13.500</span></div>
+        </div>
+
+        <div class="sub-title">GPT Go & Lok Lok</div>
+        <div class="price-grid">
+            <div class="price-item"><span class="duration">GPT Go Shar 1B (5u)</span><span class="price">Rp20.500</span></div>
+            <div class="price-item"><span class="duration">GPT Go Private 7 Jam</span><span class="price">Rp21.500</span></div>
+            <div class="price-item"><span class="duration">Lok Lok Shar Basic 1B 8u</span><span class="price">Rp13.000</span></div>
+            <div class="price-item"><span class="duration">Lok Lok Shar Standar 1B 8u</span><span class="price">Rp17.350</span></div>
+            <div class="price-item"><span class="duration">Lok Lok Private Basic</span><span class="price">Rp49.350</span></div>
+            <div class="price-item"><span class="duration">Lok Lok Private Standar</span><span class="price">Rp65.350</span></div>
+            <div class="note">📌 Basic tidak bisa diakses TV | Standar bisa akses TV</div>
+        </div>
+    </div>
+
+    <footer>
+        ⚡ REFZ & TEMAN • Harga setelah +500 • Garansi terpercaya<br>
+        📞 <strong>6285954841942</strong> • 24 Jam Nonstop
+    </footer>
+</div>
+</body>
+</html>
